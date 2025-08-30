@@ -1,0 +1,25 @@
+{
+    "servers": {
+      "taskMaster": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "--package=task-master-ai", "task-master-ai"],
+        "env": {
+          "ANTHROPIC_API_KEY": "<add-key-here>"
+        }
+      },
+      "nx-mcp": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["nx-mcp@latest"]
+      },
+      "github": {
+        "type": "http",
+        "url": "https://api.githubcopilot.com/mcp/"
+      },
+      "context7": {
+        "type": "http",
+        "url": "https://mcp.context7.com/mcp"
+      }
+    }
+}
