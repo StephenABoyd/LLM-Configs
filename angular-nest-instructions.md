@@ -128,11 +128,15 @@ This project utilizes several MCPs (Microservice Control Points) to streamline d
 - **context7 MCP**: All documentation fetching should be attempted through the context7 MCP. This ensures that documentation is always up-to-date and accessible from a centralized source.
 - **taskMaster MCP**: Task management, including assignment, tracking, and progress updates, should be handled through the taskMaster MCP. This provides a unified workflow for managing development tasks and team collaboration.
 - **nx MCP**: Any operations related to Nx, such as workspace management, project generation, and build orchestration, should be performed using the nx MCP. This guarantees consistency and reliability in Nx-related processes.
+- **sequential-thinking MCP**: Dynamic and reflective problem-solving through a structured thinking process.
+- **desktop-commander MCP**: Search, update, manage files and run terminal commands
 
 ### MCP Usage Examples
 - **context7 MCP**: To fetch documentation, use the context7 MCP API endpoint, e.g., `GET /context7/docs/{topic}`.
 - **taskMaster MCP**: For task management, interact with the taskMaster MCP, e.g., `POST /taskMaster/tasks` to create a new task.
 - **nx MCP**: For Nx operations, use the nx MCP CLI or API, e.g., `nx generate @nx/angular:component <name>` via nx MCP.
+- **sequential-thinking MCP**: For critical thinking breaking it down step by step. Including as a precursor to taskMaster to help break steps even further
+- **desktop-commander MCP**: Search, update, manage files and run terminal commands
 
 Refer to each MCP's documentation for integration details and usage examples. Always prefer MCPs for their respective domains to maintain project standards and efficiency.
 
